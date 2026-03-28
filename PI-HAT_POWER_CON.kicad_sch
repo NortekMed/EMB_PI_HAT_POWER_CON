@@ -2924,28 +2924,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text_box "Note 14:\n  External RTC circuit, pads are           available on carrier board.Non of       the external RTC components           are assembed."
-		(exclude_from_sim no)
-		(at 123.77 157.08 0)
-		(size -37.5 15)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(fill
-			(type color)
-			(color 207 201 181 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "d6edecb4-adc9-4263-9269-c6a726d97334")
-	)
 	(junction
 		(at 168.91 134.62)
 		(diameter 0)
@@ -3003,10 +2981,6 @@
 	(no_connect
 		(at 146.05 43.18)
 		(uuid "09f2742d-5fcd-4d82-86db-37900a027109")
-	)
-	(no_connect
-		(at 128.27 39.37)
-		(uuid "0a4817f2-df23-45fc-be4c-3c363eaff8ab")
 	)
 	(no_connect
 		(at 105.41 50.8)
@@ -3336,6 +3310,16 @@
 	)
 	(wire
 		(pts
+			(xy 128.27 36.83) (xy 128.27 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62417039-fe5e-4fc7-b942-7e370883f600")
+	)
+	(wire
+		(pts
 			(xy 124.46 147.32) (xy 129.54 147.32)
 		)
 		(stroke
@@ -3446,6 +3430,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 30.48) (xy 171.45 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1a5d078-8045-4a3f-93d5-d681c63004e7")
+	)
+	(wire
+		(pts
 			(xy 124.46 124.46) (xy 132.08 124.46)
 		)
 		(stroke
@@ -3496,7 +3490,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 33.02) (xy 125.73 30.48)
+			(xy 168.91 33.02) (xy 171.45 33.02)
 		)
 		(stroke
 			(width 0)
@@ -3655,7 +3649,7 @@
 		(uuid "4572fc62-56c6-4766-964e-31e3c40aa4ec")
 	)
 	(label "I2C.SDA"
-		(at 156.21 49.53 180)
+		(at 156.21 50.8 180)
 		(effects
 			(font
 				(size 0.889 0.889)
@@ -4131,7 +4125,7 @@
 	)
 	(symbol
 		(lib_id "0_NORTEK_NORTEKCON:282834-2")
-		(at 123.19 25.4 90)
+		(at 176.53 30.48 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4141,7 +4135,7 @@
 		(dnp no)
 		(uuid "1e3afa3e-4c64-4b8f-9bb4-1c9741e6c68b")
 		(property "Reference" "J101"
-			(at 120.65 25.4 0)
+			(at 176.53 27.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4151,7 +4145,7 @@
 			)
 		)
 		(property "Value" "282834-2"
-			(at 128.27 25.4 0)
+			(at 176.53 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4161,7 +4155,7 @@
 			)
 		)
 		(property "Footprint" "0_NORTEK_CONNECTOR_LOCAL:TE_282834-2"
-			(at 130.81 22.225 0)
+			(at 179.705 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4172,7 +4166,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.farnell.com/datasheets/3651102.pdf"
-			(at 132.715 24.13 0)
+			(at 177.8 40.005 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4183,7 +4177,7 @@
 			)
 		)
 		(property "Description" "Bornier fil-à-carte, 2.54 mm, 2 Voies, 30 AWG, 16 AWG, 1.4 mm², Par vis"
-			(at 123.19 25.4 0)
+			(at 176.53 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4194,7 +4188,7 @@
 			)
 		)
 		(property "mfr" "BUCHANAN - TE CONNECTIVITY"
-			(at 134.62 24.765 0)
+			(at 177.165 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4205,7 +4199,7 @@
 			)
 		)
 		(property "mfr #" "282834-2"
-			(at 134.62 3.175 0)
+			(at 198.755 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4216,7 +4210,7 @@
 			)
 		)
 		(property "vendor1" "FARNELL"
-			(at 139.065 25.4 0)
+			(at 176.53 46.355 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4227,7 +4221,7 @@
 			)
 		)
 		(property "vendor1 #" "2112482"
-			(at 139.065 15.875 0)
+			(at 186.055 46.355 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4238,7 +4232,7 @@
 			)
 		)
 		(property "TOLERANCE" ""
-			(at 123.19 25.4 0)
+			(at 176.53 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4249,7 +4243,7 @@
 			)
 		)
 		(property "TYPE" ""
-			(at 123.19 25.4 0)
+			(at 176.53 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4260,7 +4254,7 @@
 			)
 		)
 		(property "RATING" ""
-			(at 123.19 25.4 0)
+			(at 176.53 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4271,7 +4265,7 @@
 			)
 		)
 		(property "vendor2" ""
-			(at 123.19 25.4 0)
+			(at 176.53 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4282,7 +4276,7 @@
 			)
 		)
 		(property "vendor2 #" ""
-			(at 123.19 25.4 0)
+			(at 176.53 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5469,7 +5463,7 @@
 		(dnp no)
 		(uuid "750ac011-08e2-48c3-a137-3ea72a7cc57b")
 		(property "Reference" "OSC1401"
-			(at 124.714 119.888 0)
+			(at 134.62 120.65 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6201,8 +6195,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 128.27 36.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b8c54ae6-cefa-4d67-b686-712d4ad802e0")
+		(property "Reference" "#PWR0103"
+			(at 128.27 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 128.27 33.274 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 128.27 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 128.27 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "357689c2-68b1-4e00-8a68-f1752b64ab9c")
+		)
+		(instances
+			(project "PI-HAT_POWER_CON"
+				(path "/ed9ec358-b12f-4bde-8de4-e801f410db11"
+					(reference "#PWR0103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 125.73 33.02 0)
+		(at 168.91 33.02 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6212,7 +6283,7 @@
 		(dnp no)
 		(uuid "ebf071de-cea5-4f9c-b9a5-85351fa81f83")
 		(property "Reference" "#PWR0102"
-			(at 125.73 39.37 0)
+			(at 162.56 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6223,7 +6294,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 125.73 36.83 0)
+			(at 165.1 33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6233,7 +6304,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 125.73 33.02 0)
+			(at 168.91 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6244,7 +6315,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 33.02 0)
+			(at 168.91 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6255,7 +6326,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 125.73 33.02 0)
+			(at 168.91 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
