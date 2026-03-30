@@ -1,71 +1,111 @@
+# PI-HAT Power Control
+
+**Raspberry Pi HAT with Real-Time Clock and Power Management**
+
 <p align="center">
-  <img src="./NortekLogo.png" alt="Project Logo" width="150"/>
+  <img src="./FABRICATION/PI-HAT_POWER_CON_3D_v300326.png" alt="3D PCB View" width="700"/>
 </p>
 
-# KiCad Project Name
+---
 
-## 📌 Overview
-This repository contains a **KiCad** project for designing [describe your PCB, circuit, or purpose]. It includes schematics, PCB layout, and related design files.
+## 📋 Overview
 
-## 🚀 Features
-- ✅ **feat 1**: **blabla**
-- ✅ **feat 2**: **blablabla**
+This KiCad project provides a Raspberry Pi HAT featuring:
+- **M41T0M6F** Serial Real-Time Clock with battery backup
+- **32.768 kHz** crystal oscillator for precise timekeeping
+- Power control and management circuitry
+- Standard Raspberry Pi 40-pin GPIO header compatibility
 
-### **What’s New?**
-✅ **Added a section explaining how to convert `README.md` to `meta/info.html` for KiCad**  
-✅ **Included `pandoc` commands**  
-✅ **Explained how to remove emojis using `sed` or Python**  
+**Company:** NortekMed  
+**Version:** v300326 (2026-03-30)  
+**Design Tool:** KiCad 10.0
+
+---
 
 ## 📂 Project Structure
+
 ```
-📦 Project-Name/
- ├── 📁 DOCUMENTATION/    # Project documentation
- ├── 📁 FABRICATION/      # Files related to PCB fabrication
- ├── 📁 GERBER/           # Gerber files for PCB manufacturing
- ├── 📁 MECHANICAL/       # Mechanical drawings and 3D models
- ├── 📁 meta/             # Metadata and additional configuration files
-  │   ├──NortekLogo.png        # Project logo
-  │   ├──preview.png        # Project preview
- ├── 📁 SCHEMATICS/       # KiCad schematic files (.sch, .lib, .dcm)
- ├── 📁 SIMULATION/       # Simulation files and test results
- ├── 📜 Project-Name.pro  # KiCad project file
- ├── 📜 README.md         # Project documentation
- └── ...
+PI-HAT_POWER_CON/
+├── DOCUMENTATION/
+│   └── datasheet/           # Component datasheets (11 components)
+├── FABRICATION/
+│   ├── GERBER_v300326.zip   # Manufacturing files (Gerber + drill)
+│   └── PI-HAT_POWER_CON_3D_v300326.png
+├── GERBER/                  # Individual Gerber layer files
+├── MECHANICAL/              # Mechanical drawings and models
+├── SCHEMATICS/              # Additional schematic resources
+├── PI-HAT_POWER_CON.kicad_pcb    # PCB layout file
+├── PI-HAT_POWER_CON.kicad_sch    # Schematic file
+├── PI-HAT_POWER_CON.kicad_pro    # KiCad project file
+└── NortekLogo.png
 ```
-### **Convert Markdown to HTML with `pandoc`**
-To generate `meta/info.html`, use **Pandoc**:
-pandoc README.md -o meta/info.html
-or
-sed 's/[🚀📌✅🛠🎨🤝📜📦├──📁📂└──│]//g' README.md | pandoc -o meta/info.html
 
+---
 
-## 🛠 Installation & Usage
-1. **Install KiCad** (if not already installed):  
-   Download the latest version from [KiCad’s official website](https://www.kicad.org/download/).
+## 🔧 Key Components
 
-2. **Open the Project**:  
-   - Open **KiCad** and select **File > Open Project** (`.pro` file).
-   - Load the **schematic** (`.sch`) and **PCB layout** (`.kicad_pcb`).
+| Component | Part Number | Description |
+|-----------|-------------|-------------|
+| **RTC** | M41T0M6F | STMicroelectronics Serial RTC |
+| **Oscillator** | CC4V-T1A | 32.768 kHz crystal oscillator |
+| **Diode** | BAT54C-7-F | Schottky diode array |
+| **Battery Holder** | Keystone 3000 | CR1220 coin cell holder |
+| **Connector** | 282834-2 | Terminal block |
 
-3. **Editing the Design**:  
-   - Modify components in **Eeschema** (schematic editor).
-   - Adjust PCB layout in **Pcbnew**.
+---
 
-4. **Generating Gerber Files** (for manufacturing):
-   - In **Pcbnew**, go to **File > Plot** and generate **Gerber** files.
-   - Export the **Drill Files** as well.
+## 📁 Manufacturing Files
 
-5. **3D Visualization**:
-   - Open **Pcbnew**, press `ALT+3` to view the 3D model.
+**Production-ready Gerber files:**
+- `FABRICATION/GERBER_v300326.zip` - Complete manufacturing package
+  - Gerber layers (top, bottom, silkscreen, solder mask)
+  - Drill files (PTH and NPTH)
+  - Job report
 
-## 🎨 Preview
-<p align="center">
-  <img src="./preview.png" alt="Project Preview" width="600"/>
-</p>
+**Component Documentation:**
+- All datasheets available in `DOCUMENTATION/datasheet/`
+- Bill of Materials with Farnell part numbers in schematic
 
+---
 
-## 🤝 Contributing
-Contributions are welcome! Feel free to **fork** the project, open **issues**, or submit **pull requests**.
+## 🛠️ Technical Specifications
+
+- **Board Type:** 2-layer PCB
+- **Dimensions:** Standard Raspberry Pi HAT form factor
+- **Mounting:** Compatible with Raspberry Pi mounting holes
+- **Interface:** I2C for RTC communication
+- **Power:** Operates from Raspberry Pi 3.3V/5V supply
+- **Battery Backup:** CR1220 coin cell for RTC during power-off
+
+---
+
+## 🔋 Maintenance
+
+### RTC Battery Replacement
+
+The Real-Time Clock (M41T0M6F) requires a **CR1220 or CR1225 coin cell battery** to maintain accurate timekeeping when the Raspberry Pi is powered off.
+
+**Battery Specifications:**
+- **Type:** CR1220 or CR1225 Lithium coin cell (3V)
+- **Holder:** Keystone 3000
+- **Typical Lifespan:** 5-10 years (depending on usage)
+- **Standby Current:** ~0.9 µA
+
+**Replacement Procedure:**
+1. Power off the Raspberry Pi and disconnect all cables
+2. Gently press and release the battery from the Keystone 3000 holder
+3. Insert new CR1220 or CR1225 battery with positive (+) side facing up
+4. Verify battery orientation matches the polarity markings on the PCB
+5. Reconnect and power on - box should be start with modem to update/set date
+
+**⚠️ Important Notes:**
+- Always use fresh, high-quality CR1220 or CR1225 batteries
+- Do not force the battery into the holder
+- Dispose of used batteries according to local regulations
+- Battery backup only maintains RTC time; it does not power other circuits
+
+---
 
 ## 📜 License
-This project is licensed under the [MIT License](LICENSE).
+
+© 2026 NortekMed. All rights reserved.
