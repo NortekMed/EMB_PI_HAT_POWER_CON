@@ -148,7 +148,7 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
+        "min_through_hole_diameter": 0.2,
         "min_track_width": 0.0,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
@@ -269,7 +269,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "1"
+      "sch_revision": "2026-03-30"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -976,7 +976,7 @@
         "uuid": "ed9ec358-b12f-4bde-8de4-e801f410db11"
       }
     ],
-    "used_designators": "#PWR103,R101-104,OSC101,D101,C101-104,IC101,BAT101",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [

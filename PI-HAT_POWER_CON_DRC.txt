@@ -1,0 +1,72 @@
+** Drc report for PI-HAT_POWER_CON.kicad_pcb **
+** Created on 2026-03-30T08:16:20 **
+** Report includes: Errors, Warnings **
+
+** Found 14 DRC violations **
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0,3000 mm; actual 0,2000 mm)
+    Rule: netclass '0.55mm - 1.5A'; error
+    @(128.2700 mm, 123.0630 mm): Via [GND] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0,3000 mm; actual 0,2000 mm)
+    Rule: netclass '0.55mm - 1.5A'; error
+    @(138.3030 mm, 135.1280 mm): Via [GND] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0,3000 mm; actual 0,2000 mm)
+    Rule: netclass '0.3mm - 1A'; error
+    @(143.4515 mm, 129.1275 mm): Via [+3V3] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0,3000 mm; actual 0,2000 mm)
+    Rule: netclass '0.3mm - 1A'; error
+    @(130.7515 mm, 120.3375 mm): Via [+3V3] on F.Cu - B.Cu
+[starved_thermal]: Thermal relief connection to zone incomplete (layer B.Cu; zone min spoke count 2; actual 1)
+    Local override; warning
+    @(160.5500 mm, 110.5250 mm): Zone 'GND' [GND] on F.Cu and B.Cu, priority 0
+    @(149.9800 mm, 124.3600 mm): PTH pad 6 [GND] of J102
+[starved_thermal]: Thermal relief connection to zone incomplete (layer B.Cu; zone min spoke count 2; actual 1)
+    Local override; warning
+    @(160.5500 mm, 110.5250 mm): Zone 'GND' [GND] on F.Cu and B.Cu, priority 0
+    @(149.9800 mm, 134.5200 mm): PTH pad 14 [GND] of J102
+[starved_thermal]: Thermal relief connection to zone incomplete (layer B.Cu; zone min spoke count 2; actual 1)
+    Local override; warning
+    @(160.5500 mm, 110.5250 mm): Zone 'GND' [GND] on F.Cu and B.Cu, priority 0
+    @(149.9800 mm, 142.1400 mm): PTH pad 20 [GND] of J102
+[starved_thermal]: Thermal relief connection to zone incomplete (layer B.Cu; zone min spoke count 2; actual 1)
+    Local override; warning
+    @(160.5500 mm, 110.5250 mm): Zone 'GND' [GND] on F.Cu and B.Cu, priority 0
+    @(147.4400 mm, 149.7600 mm): PTH pad 25 [GND] of J102
+[starved_thermal]: Thermal relief connection to zone incomplete (layer F.Cu; 1 spokes connected to isolated island)
+    Local override; warning
+    @(160.5500 mm, 110.5250 mm): Zone 'GND' [GND] on F.Cu and B.Cu, priority 0
+    @(147.4400 mm, 129.4400 mm): PTH pad 9 [GND] of J102
+[starved_thermal]: Thermal relief connection to zone incomplete (layer B.Cu; zone min spoke count 2; actual 1)
+    Local override; warning
+    @(160.5500 mm, 110.5250 mm): Zone 'GND' [GND] on F.Cu and B.Cu, priority 0
+    @(149.9800 mm, 154.8400 mm): PTH pad 30 [GND] of J102
+[starved_thermal]: Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)
+    Local override; warning
+    @(160.5500 mm, 110.5250 mm): Zone 'GND' [GND] on F.Cu and B.Cu, priority 0
+    @(149.9800 mm, 134.5200 mm): PTH pad 14 [GND] of J102
+[starved_thermal]: Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)
+    Local override; warning
+    @(160.5500 mm, 110.5250 mm): Zone 'GND' [GND] on F.Cu and B.Cu, priority 0
+    @(149.9800 mm, 142.1400 mm): PTH pad 20 [GND] of J102
+[starved_thermal]: Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)
+    Local override; warning
+    @(160.5500 mm, 110.5250 mm): Zone 'GND' [GND] on F.Cu and B.Cu, priority 0
+    @(147.4400 mm, 149.7600 mm): PTH pad 25 [GND] of J102
+[starved_thermal]: Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)
+    Local override; warning
+    @(160.5500 mm, 110.5250 mm): Zone 'GND' [GND] on F.Cu and B.Cu, priority 0
+    @(149.9800 mm, 154.8400 mm): PTH pad 30 [GND] of J102
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - PTH inside courtyard
+    - NPTH inside courtyard
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

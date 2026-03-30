@@ -5,9 +5,9 @@
 	(uuid "ed9ec358-b12f-4bde-8de4-e801f410db11")
 	(paper "A4")
 	(title_block
-		(title "PROJECT_NAME")
-		(date "2025-02-18")
-		(rev "1")
+		(title "PI_RTC_POWER")
+		(date "2026-03-30")
+		(rev "2026-03-30")
 		(company "NortekMed")
 	)
 	(lib_symbols
@@ -2949,6 +2949,12 @@
 		(uuid "67b4c142-9077-44d9-ae83-6202f62b089c")
 	)
 	(junction
+		(at 151.13 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6c9ba18c-e748-442d-b812-c427cc182294")
+	)
+	(junction
 		(at 144.78 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2967,10 +2973,28 @@
 		(uuid "8945eafc-f3d0-4722-ab95-e71258f5902a")
 	)
 	(junction
+		(at 128.27 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a3810cec-8ab3-4afb-955b-33f6055ba4b7")
+	)
+	(junction
 		(at 157.48 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d0ee05d2-3d4a-428f-b2a0-1611b1e10164")
+	)
+	(junction
+		(at 123.19 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f8c4b025-b3b6-4a0d-992c-da656037daed")
+	)
+	(junction
+		(at 125.73 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fa3752a3-ccca-458b-ab75-155b434bb1db")
 	)
 	(junction
 		(at 140.97 134.62)
@@ -3310,7 +3334,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 36.83) (xy 128.27 39.37)
+			(xy 128.27 36.83) (xy 128.27 38.1)
 		)
 		(stroke
 			(width 0)
@@ -3418,6 +3442,16 @@
 		)
 		(uuid "9074b596-af42-49bf-b892-99558a0056ae")
 	)
+	(wire
+		(pts
+			(xy 128.27 38.1) (xy 128.27 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96e5dc47-eed2-47df-9a91-3cdf0ef4b7b8")
+	)
 	(bus
 		(pts
 			(xy 160.02 39.37) (xy 160.02 50.8)
@@ -3430,13 +3464,23 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 30.48) (xy 171.45 30.48)
+			(xy 123.19 30.48) (xy 151.13 30.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a1a5d078-8045-4a3f-93d5-d681c63004e7")
+	)
+	(wire
+		(pts
+			(xy 151.13 30.48) (xy 171.45 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a67e7bcc-77ab-4af0-a01c-a1c4700324a2")
 	)
 	(wire
 		(pts
@@ -3490,6 +3534,26 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 27.94) (xy 123.19 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bae136d8-345b-4a19-a72c-bdf536eb1a44")
+	)
+	(wire
+		(pts
+			(xy 125.73 95.25) (xy 125.73 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbadca36-a7ec-4acd-b219-b0738743c8bd")
+	)
+	(wire
+		(pts
 			(xy 168.91 33.02) (xy 171.45 33.02)
 		)
 		(stroke
@@ -3510,7 +3574,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 91.44) (xy 125.73 90.17)
+			(xy 125.73 97.79) (xy 125.73 95.25)
 		)
 		(stroke
 			(width 0)
@@ -3707,28 +3771,6 @@
 			(justify left bottom)
 		)
 		(uuid "d085be98-7297-43f1-a5d5-03f4854798fa")
-	)
-	(hierarchical_label "I2C{I2C}"
-		(shape passive)
-		(at 172.72 39.37 0)
-		(effects
-			(font
-				(size 0.889 0.889)
-			)
-			(justify left)
-		)
-		(uuid "22b93985-cf1a-4dcc-89e9-d5390ca17416")
-	)
-	(hierarchical_label "I2C{I2C}"
-		(shape passive)
-		(at 45.72 137.16 180)
-		(effects
-			(font
-				(size 0.889 0.889)
-			)
-			(justify right)
-		)
-		(uuid "d04f9b21-4755-4a47-9d3f-b4696d2f01f9")
 	)
 	(symbol
 		(lib_id "0_NORTEK_NORTEKGLOBAL:Raspberry_Pi_2x20_PTH_CON_NoSilk")
@@ -6118,8 +6160,162 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 123.19 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a113d249-4463-4ce6-ba5c-9edd41fecbfb")
+		(property "Reference" "#PWR0104"
+			(at 123.19 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+			)
+		)
+		(property "Value" "+5.1V"
+			(at 123.19 24.384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 123.19 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "98897477-5cf1-435b-855e-20ad7ea42562")
+		)
+		(instances
+			(project "PI-HAT_POWER_CON"
+				(path "/ed9ec358-b12f-4bde-8de4-e801f410db11"
+					(reference "#PWR0104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 125.73 95.25 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a769da28-f52a-4fe4-9c95-722b39bf91c2")
+		(property "Reference" "#FLG0103"
+			(at 127.635 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 133.604 95.25 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.73 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 125.73 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "783f44e4-8afd-439e-85c1-78dc2447d2f0")
+		)
+		(instances
+			(project "PI-HAT_POWER_CON"
+				(path "/ed9ec358-b12f-4bde-8de4-e801f410db11"
+					(reference "#FLG0103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 125.73 91.44 0)
+		(at 125.73 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6129,7 +6325,7 @@
 		(dnp no)
 		(uuid "b6ad1385-81e7-41a9-9316-ea9b611539a3")
 		(property "Reference" "#PWR0101"
-			(at 125.73 97.79 0)
+			(at 125.73 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6140,7 +6336,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 125.73 95.25 0)
+			(at 125.73 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6150,7 +6346,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 125.73 91.44 0)
+			(at 125.73 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6161,7 +6357,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 91.44 0)
+			(at 125.73 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6172,7 +6368,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 125.73 91.44 0)
+			(at 125.73 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6266,6 +6462,83 @@
 			(project "PI-HAT_POWER_CON"
 				(path "/ed9ec358-b12f-4bde-8de4-e801f410db11"
 					(reference "#PWR0103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 151.13 30.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c7bd69a6-462a-42a9-8ba1-e5b81a99a49e")
+		(property "Reference" "#FLG0102"
+			(at 151.13 28.575 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 154.94 27.432 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 151.13 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 151.13 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 151.13 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8ae8ca2f-7e10-436c-beea-f0fa4e2fc0a2")
+		)
+		(instances
+			(project "PI-HAT_POWER_CON"
+				(path "/ed9ec358-b12f-4bde-8de4-e801f410db11"
+					(reference "#FLG0102")
 					(unit 1)
 				)
 			)
@@ -7395,6 +7668,83 @@
 			(project "PI-HAT_POWER_CON"
 				(path "/ed9ec358-b12f-4bde-8de4-e801f410db11"
 					(reference "C1404")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 128.27 38.1 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ffd2b0b1-ef10-4940-97c0-227653ef2a71")
+		(property "Reference" "#FLG0101"
+			(at 130.175 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 136.144 38.1 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 128.27 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 128.27 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7f94a212-8993-4eb5-b5e4-ccd3481f7874")
+		)
+		(instances
+			(project "PI-HAT_POWER_CON"
+				(path "/ed9ec358-b12f-4bde-8de4-e801f410db11"
+					(reference "#FLG0101")
 					(unit 1)
 				)
 			)
