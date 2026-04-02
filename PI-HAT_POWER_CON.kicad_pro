@@ -798,7 +798,7 @@
       "method": 1,
       "sort_order": 0
     },
-    "bom_export_filename": "",
+    "bom_export_filename": "FABRICATION/v310326/PI-HAT_POWER_CON.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -848,12 +848,102 @@
           "label": "DNP",
           "name": "${DNP}",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Label",
+          "name": "Label",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PROD_ID",
+          "name": "PROD_ID",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Package",
+          "name": "Package",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "RATING",
+          "name": "RATING",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SF_ID",
+          "name": "SF_ID",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "TOLERANCE",
+          "name": "TOLERANCE",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "TYPE",
+          "name": "TYPE",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "mfr",
+          "name": "mfr",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "mfr #",
+          "name": "mfr #",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "vendor1",
+          "name": "vendor1",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "vendor1 #",
+          "name": "vendor1 #",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "vendor2",
+          "name": "vendor2",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "vendor2 #",
+          "name": "vendor2 #",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": false,
-      "name": "Grouped By Value",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },

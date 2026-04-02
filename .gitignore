@@ -47,8 +47,6 @@
 
 # Project specific outputs
 GERBER/
-FABRICATION/
-*.zip
 
 # KiCad specific
 fp-info-cache
